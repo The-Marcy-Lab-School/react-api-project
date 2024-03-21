@@ -1,0 +1,22 @@
+.searchForm{
+    display: flex;
+    justify-content: center;
+}
+
+#notice{
+    display: flex;
+    justify-content: center;
+}
+
+#container{
+ display:block;
+ width: 80rem;
+}
+
+#flex-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 10px;
+    row-gap: 1em;
+    justify-content: center;
+}
