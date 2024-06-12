@@ -1,93 +1,70 @@
-# [Project Name]
+# Nourish
 
-Created by [team member], [team member], and [team member].
+Created by Tahj Amie and Dominic Tuzo.
 
 ## 🚀 Mission statement
 
-Our application, [app name] is for [target audience]. It allows users to [what it does and why audience would use it]
+Our application, Nourish was created for people looking for something to eat. It allows users to select a meal from a plethora of choices and then provides instructions on how to re-create the meal of their choosing.
 
 ## API & React Router
 
-This application will use the [name of API] API. Below are the documentation and specific endpoints we intend to use and the front-end pages that will use them.
+This application will use the theMealDB API. Below are the documentation and specific endpoints we intend to use and the front-end pages that will use them.
 
-- Link to API documentation: [Link goes here]
-- API endpoint #1
-  - Description of endpoint
-  - List of data values used by the endpoint
-- API endpoint #2
-  - Description of endpoint
-  - List of data values used by the endpoint
-- API endpoint #3
-  - Description of endpoint
-  - List of data values used by the endpoint
-
-[If your API requires an API key, say so here.]
-
-**Example:**
-- https://api.artic.edu/api/v1/artworks
-  - This will fetch an array of artwork objects
-  - For each artwork, I want the `id`, `title`, and `image_id`
-- https://api.artic.edu/api/v1/artworks/{id}
-  - This will fetch a single artwork object
-  - I will use the `id`, `title`, `short_description`, `medium_display`, `place_of_origin` and `image_id`
-- https://api.artic.edu/api/v1/artworks/search?q={query}
-  - This will fetch a list of artworks that relate to the search query
-  - For each artwork, I will use the `id` and `title`
+- Link to API documentation: https://www.themealdb.com/api.php
+- https://www.themealdb.com/api/json/v1/1/lookup.php?i=53050
+  - Provides a list of meals based on the selected meal's id.
+  - Data Values: idMeal, strMeal, strInstructions, strIngredients
+- https://www.themealdb.com/api/json/v1/1/categories.php 
+  - Provides a list of categories
+  - Data Values: idCategory, strCategory
+- https://www.themealdb.com/json/v1/1/filter.php?c=Seafood
+  - Filters through the specified category
+  - Data Values: strMeal, strMealThumb, idMeal
 
 ## 👩‍💻 MVP User Stories & Frontend Routes
 
 The application will feature the following frontend routes and core features:
 
-* On the `/example` page, users can...
-* On the `/example` page, users can...
-* On the `/example` page, users can...
-
-**Example:**
-- On the `/artworks` page, users can view a grid of all artwork
-- On the `/artworks` page, users can click on a piece of art in the grid, taking them to the details page for that piece of art.
-- On the `/artworks/:artworkId` page, users can view additional details for a single piece of art
-- On the `/` page, users can search for artwork titles related to a search term.
+* On the `/` page, users can select for a category for a list of meals.
+* On the `/category/:id` page, users can view a grid of all meals specified by a single category.
+* On the `/category/:id` page, users can select a single meal.
+* On the `/recipe-details/:id` page, users can view instructions for a single meal.
 
 ## 🤔 Stretch User Stories
 
 If time permits, the following stretch features will be implemented in order of priority:
 
-* Users will be able to...
-* Users will be able to...
-* Users will be able to...
-
-**Example:**
-* Users will be able to save and view favorited artworks using local storage
-* Users will be able to change the color scheme of the website from light mode to dark mode
+* Users will be able to list all information for each meal
+* Users will be able to save favorite meals using local storage
+* Users will be able to create a meal plan using a calendar api
 
 ## 📆 Timeline for reaching MVP in 1 week
 
 To ensure that we can complete all core features of the application in 1 week, we will aim to complete tasks according to the following timeline:
 
 **Day 1**
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
+- [ ] Create a GitHub Organization 
+- [ ] Create a Scrum Board with tickets
+- [ ] Create the project repo with the project proposal in the markdown
+- [ ] Create all files and directories needed
 
 **Day 2**
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
+- [ ] Fetch the categories
+- [ ] Fetch the list of meals in each category
+- [ ] Fetch the meal data for a single meal
 
 **Day 3** (MVP due by the end of the day)
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
+- [ ] Create the category dropdown 
+- [ ] Create meal list for selected category
+- [ ] Create page with instructions for the specified meal
 
 **Day 4**
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
+- [ ] Styling and making the website pretty
+- [ ] Implementing first stretch feature
 
 **Day 5**
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
+- [ ] Implementing second stretch feature
+- [ ] Implementing third stretch feature
 
 ## Wireframes of each page in your application
 
