@@ -1,0 +1,191 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+ 
+}
+
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0  15px 20px 0 #cd0aa9c2;
+
+
+}
+
+img {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Preserve aspect ratio */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+}
+
+/* Clear floats */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  display: flex;  
+  flex-direction: column;
+}
+
+/* @keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+} */
+
+
+.read-the-docs {
+  color: #888;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color:  rgb(145, 189, 88);
+
+}
+
+.navbar {
+  /* Example color for the navigation bar */
+  padding: 10px 0;
+  gap:3px;
+}
+
+.nav-list {
+ list-style-type: none;
+  margin: 0;
+  padding: 10;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+} 
+.nav-list li a {
+  color: black; /* Set the color of the links to black */
+  text-decoration: none; /* Remove underline from the links */
+  font-size: 18px;
+}
+
+.nav-list li a:hover {
+  color: rgb(156, 88, 189); /* Change color on hover */
+}
+
+.category-title {
+  font-size: 18px;
+  color: black;
+}
+
+.dropdown { 
+  position: relative;
+  display: inline-block;
+  text-align: center;
+} 
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  background-color: gray;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.title {
+  font-size: 150px; /* Example font size for the title */
+  font-family: 'Arial Black', sans-serif; /* Example font family for the title */
+  text-align: center;
+  color: #333; /* Example color for the title */
+  text-shadow:  8px 6px 8px rgb(156, 88, 189); 
+  animation: wave 2s infinite alternate;
+}
+
+@keyframes wave {
+  from {
+    transform: rotate(-5deg);
+  }
+  to {
+    transform: rotate(10deg);
+  }
+}
+
+.subtitle {
+  font-size: 24px; /* Example font size for the subtitle */
+  text-align: center;
+  color: rgb(156, 88, 189); /* Example color for the subtitle */
+  text-shadow:  4px 4px 4px white;
+}
+
+.home-container {
+  background-color: antiquewhite; /* Example background color for the home container */
+  padding: 50px 0; /* Example padding for the home container */
+}
+
+
+.container {
+  display:grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap : 2em
+
+}
+
+#picture {
+ float:left;
+ border-radius:10px;
+ width:450px;
+ height:auto;
+ 
+
+}
+
+#instructions {
+flex-wrap: wrap;
+}
+
+.recipe-container {
+  display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
